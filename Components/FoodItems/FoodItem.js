@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, ImageBackground } from 'react-native';
 import styles from './styles'
 import Button from '../Buttons';
+import Header from '../Header/Header';
 
 const FoodItem = (props) => {
 
@@ -10,12 +11,17 @@ const FoodItem = (props) => {
     return (
           
     <View style={styles.foodContainer}>
+      
     <ImageBackground
       source={image}
       style={styles.imgs} 
     />
-
+    <View style={styles.container}>
+            <Text style= {styles.headtext}>Click To Eat</Text>
+            
+        </View>
     <View style={styles.foodTitles}>
+   
       <Text style={styles.text}>{name}</Text>
       <Text style={styles.subText}>{price}</Text>
     </View>

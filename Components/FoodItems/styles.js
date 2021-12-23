@@ -16,13 +16,15 @@ const styles = StyleSheet.create({
       width: '100%',
       alignItems: 'center',
       backgroundColor: "rgba(108, 122, 137, .2)",
-     position:'absolute',bottom:'25%',
+      height:100
+     /* position:'absolute',bottom:'25%', */
       },
       
       text:{
         fontSize:48,
         fontWeight: "500",
         color:'white',
+        
        
       },
       subText:{
@@ -39,7 +41,14 @@ const styles = StyleSheet.create({
           position:'absolute',
           bottom: 50,
           width:'100%'
-      }
+      },
+    headtext:{
+      textAlign:'center',
+      paddingTop:50,
+      fontSize:40,
+      fontWeight:"bold",
+      color:'salmon'
+    }
 })
 
 export default styles;

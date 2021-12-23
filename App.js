@@ -7,10 +7,8 @@ import Header from './Components/Header/Header';
 export default function App() {
   return (
     <View style={styles.container}>
-      
-      <Header />
+      {/* <Header /> */}
       <FoodList />
-
       <StatusBar style="auto"/>
     </View>
   );
