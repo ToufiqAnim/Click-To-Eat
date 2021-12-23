@@ -1,23 +1,27 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from 'react-native';
 
 const styles = StyleSheet.create({
     foodContainer:{
         width:'100%',
-        height:'100%'
+        height: Dimensions.get('window').height,
       },
-        foodTitles:{
-        padding:20,
+    foodTitles:{
+        /* padding:20,
         width:'100%',
         alignItems:'center',
-        position:'absolute',
-       backgroundColor: "rgba(108, 122, 137, .4)",
-       bottom:'75%'
-     
+        
+       
+       bottom:'75%', */
+       marginTop: '30%',
+      width: '100%',
+      alignItems: 'center',
+      backgroundColor: "rgba(108, 122, 137, .2)",
+     position:'absolute',bottom:'25%',
       },
       
       text:{
-        fontSize:"3em",
-        fontWeight: 500,
+        fontSize:48,
+        fontWeight: "500",
         color:'white',
        
       },
@@ -26,10 +30,10 @@ const styles = StyleSheet.create({
         color:'white'
       },
       imgs:{
-        width:'100%',
-         height:'100%',
-         resizeMode:'cover',
-         position:'absolute'
+        width: '100%',
+        height: '100%',
+        resizeMode: 'cover',
+        position: 'absolute',
       },
       btnContainer:{
           position:'absolute',

@@ -1,11 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, ImageBackground } from 'react-native';
-import FoodItem from './Components/FoodItems';
+import { StyleSheet, View} from 'react-native';
+import FoodList from "./Components/FoodList/FoodList";
+import Header from './Components/Header/Header';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <FoodItem/>
+      
+      <Header />
+      <FoodList />
+
       <StatusBar style="auto"/>
     </View>
   );
